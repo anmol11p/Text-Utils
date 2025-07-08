@@ -3,11 +3,13 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://anmol11p.github.io/Text-Utils",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.10",
@@ -15,7 +17,8 @@
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-router-dom": "^7.6.3",
-    "tailwindcss": "^4.1.10"
+    "tailwindcss": "^4.1.10",
+    "gh-pages": "^6.3.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.29.0",

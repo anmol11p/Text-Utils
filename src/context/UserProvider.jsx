@@ -9,6 +9,9 @@ const UserProvider = ({ children }) => {
     const stored = localStorage.getItem("mode");
     if (stored) {
       setMode(stored);
+    } else {
+      const defaultMode = localStorage.setItem("mode", "light");
+      setMode(defaultMode);
     }
   }, []);
 

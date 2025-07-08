@@ -2,6 +2,7 @@ import React, { useContext, useState } from "react";
 import { UserContext } from "../context/UserProvider";
 import getBgClass from "../helper/BgClass";
 import aboutsection from "../helper/aboutsection.json";
+import { Maximize2 } from "lucide-react";
 const About = () => {
   const { mode } = useContext(UserContext);
   const [visibleText, setVisibleSection] = useState(null);
@@ -17,19 +18,26 @@ const About = () => {
         )} about-section min-h-screen flex items-center justify-center px-4 py-10`}
       >
         <div
-          className={`p-6  shadow-2xl max-w-2xl  rounded-sm
+          className={`p-6  shadow-2xl max-w-2xl  rounded-md
          w-full space-y-6  transition-all duration-200 `}
         >
           <h2 className="text-3xl font-bold text-center">About Us</h2>
           {aboutsection.map((item) => {
             return (
               <div
-                className="border-1 border-gray-200 px-5 py-2 cursor-pointer rounded-sm"
+                className={`px-5 py-2 cursor-pointer rounded-sm ${
+                  visibleText !== item.id && "border-gray-200"
+                }`}
                 onClick={() => toggleSection(item.id)}
-                Key={item.id}
+                key={item.id}
               >
-                <button className="text-xl font-semibold mb-2">
-                  {item.title}
+                <button className="text-xl font-semibold mb-2 focus:outline-none flex items-center justify-between w-full">
+                  <span>{item.title}</span>
+                  <Maximize2
+                    className={`w-5 h-5 ml-2 cursor-pointer ${
+                      visibleText === item.id && "hidden"
+                    }`}
+                  />
                 </button>
 
                 {visibleText === item.id && (

@@ -75,7 +75,7 @@ const HomePage = () => {
 
   return (
     <div
-      className={`${containerClass} px-4 min-h-screen grid place-items-center`}
+      className={`${containerClass} px-4 min-h-screen grid place-items-center py-20 lg:py-0`}
     >
       <Alert
         message={alert.message}
@@ -105,28 +105,28 @@ const HomePage = () => {
           <button
             onClick={toUpperCase}
             disabled={isInputEmpty}
-            className="bg-blue-600 focus:outline-none  hover:bg-blue-700 text-white px-4 py-2 rounded-md disabled:opacity-50"
+            className="bg-blue-600 cursor-pointer focus:outline-none  hover:bg-blue-700 text-white px-4 py-2 rounded-md disabled:opacity-50"
           >
             Convert to Uppercase
           </button>
           <button
             onClick={clearText}
             disabled={isInputEmpty}
-            className="bg-red-500 focus:outline-none hover:bg-red-600 text-white px-4 py-2 rounded-md disabled:opacity-50"
+            className="bg-red-500 cursor-pointer focus:outline-none hover:bg-red-600 text-white px-4 py-2 rounded-md disabled:opacity-50"
           >
             Clear Text
           </button>
           <button
             onClick={removeSpaces}
             disabled={isInputEmpty}
-            className="bg-purple-600 focus:outline-none hover:bg-purple-700 text-white px-4 py-2 rounded-md disabled:opacity-50"
+            className="bg-purple-600 cursor-pointer focus:outline-none hover:bg-purple-700 text-white px-4 py-2 rounded-md disabled:opacity-50"
           >
             Remove Extra Spaces
           </button>
           <button
             onClick={copyToClipboard}
             disabled={isInputEmpty}
-            className="bg-green-600 focus:outline-none hover:bg-green-700 text-white px-4 py-2 rounded-md disabled:opacity-50"
+            className="bg-green-600 cursor-pointer focus:outline-none hover:bg-green-700 text-white px-4 py-2 rounded-md disabled:opacity-50"
           >
             Copy to Clipboard
           </button>
