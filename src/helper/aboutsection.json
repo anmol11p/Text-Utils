@@ -1,0 +1,17 @@
+[
+  {
+    "id": "analyze",
+    "title": "Analyze Your Text",
+    "description": "TextUtils gives you a way to analyze your text quickly and efficiently. Be it word count, character count, or more."
+  },
+  {
+    "id": "free",
+    "title": "Free To Use",
+    "description": "TextUtils is a free character counter tool that provides instant character & word count statistics. It is ideal for writing content within specific limits."
+  },
+  {
+    "id": "browser",
+    "title": "Browser Compatible",
+    "description": "This tool works in all modern web browsers including Chrome, Firefox, Safari, and Edge. Great for analyzing content in blogs, books, PDFs, or online forms."
+  }
+]
